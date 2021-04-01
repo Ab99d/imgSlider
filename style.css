@@ -1,0 +1,65 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: url(https://images.unsplash.com/photo-1608697005000-2be78a1f1023?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80) no-repeat center;
+    background-size: cover;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    height: 100vh;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.content {
+    position: relative;
+    width: 639px;
+    height: 449px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    box-shadow: 5px 5px 30px black;
+}
+
+.images-content {
+    display: flex;
+    flex-direction: row;
+    transition: all 1s ease-in-out;
+}
+
+.images-content img {
+    width: 639px;
+    height: 449px;
+}
+
+.balls-content {
+    position: absolute;
+    top: 93%;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.balls-content button {
+    margin: 5px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: 2px solid black;
+    display: inline-block;
+    cursor: pointer;
+    outline: none;
+    background: none;
+    box-shadow: 2px 2px 10px black;
+}
+
+.balls-content button:focus {
+    background-color: white;
+}
